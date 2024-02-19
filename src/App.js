@@ -20,10 +20,9 @@ function App() {
   return (
     <div className="app">
       <Routes>
-        <Route path="/" element={<Layout />}>
-          <Route path="main" element={<MainPage />} />
+        <Route>
+          <Route path="/" element={<MainPage />} />
           <Route path=":movieId" element={<DetailPage />} />
-
         </Route>
       </Routes>
     </div>
